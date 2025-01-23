@@ -66,7 +66,7 @@ def delete_message():
 
 def choose_folder_1():
     global folder_path_1
-    if label.cget('text') == "" or label.cget("Can't display the photo") == "There is no photo in the selected file":
+    if label.cget('text') == "Can't display the photo" or label.cget("text") == "There is no photo in the selected file":
         folder_path_1 = None
 
     if folder_path_1 is None:
